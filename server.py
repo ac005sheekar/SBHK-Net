@@ -1,4 +1,4 @@
-# Initializing server by tracing the modified YOLO for Robot-vision 
+# Initializing server by invoking the modified YOLO-v7 with Optimized Robot-vision Neural Network (SBHK-Net)  
 # Written and Tested By: Sheekar Banerjee
 # Supervised By: Dr. Humayun Kabir
 # Inha University, South Korea
@@ -71,7 +71,7 @@ def detect(save_img=False):
     # Second-stage classifier
     classify = False
     if classify:
-        modelc = load_classifier(name='bk_net', n=2)  # initialize
+        modelc = load_classifier(name='sbhk_net', n=2)  # initialize
         modelc.load_state_dict(torch.load('weights/efficientnet_v2_l', map_location=device)['model']).to(device).eval()
 
     # Set Dataloader
@@ -176,7 +176,7 @@ def detect(save_img=False):
 
             # Stream results
             if view_img:
-                cv2.imshow("BK-Net Robot Vision - Sheekar Banerjee and Humayun Kabir", 
+                cv2.imshow("SBHK-Net Robot Vision - Sheekar Banerjee and Humayun Kabir", 
                            #str(p), 
                            im0)
                 cv2.waitKey(1)  # 1 millisecond
@@ -235,7 +235,7 @@ if __name__ == '__main__':
 
     with torch.no_grad():
         if opt.update:  # update all models (to fix SourceChangeWarning)
-            for opt.weights in ['bk-net.pt']:
+            for opt.weights in ['sbhk-net.pt']:
                 detect()
                 strip_optimizer(opt.weights)
         else:
