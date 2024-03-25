@@ -1,4 +1,4 @@
-# Training the modified YOLO-V7 for occlusion aware Robot-vision 
+# Training the modified YOLO-v7 with Optimized Robot-vision Neural Network (SBHK-Net) 
 # Written and Tested By: Sheekar Banerjee
 # Supervised By: Dr. Humayun Kabir
 # Inha University, South Korea
