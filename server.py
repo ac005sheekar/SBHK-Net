@@ -71,7 +71,7 @@ def detect(save_img=False):
     # Second-stage classifier
     classify = False
     if classify:
-        modelc = load_classifier(name='efficientnet_v2_l', n=2)  # initialize
+        modelc = load_classifier(name='bk_net', n=2)  # initialize
         modelc.load_state_dict(torch.load('weights/efficientnet_v2_l', map_location=device)['model']).to(device).eval()
 
     # Set Dataloader
@@ -176,7 +176,7 @@ def detect(save_img=False):
 
             # Stream results
             if view_img:
-                cv2.imshow("Occlusion Aware Robot Vision with YOLO-V7 - Sheekar Banerjee and Humayun Kabir", 
+                cv2.imshow("BK-Net Robot Vision - Sheekar Banerjee and Humayun Kabir", 
                            #str(p), 
                            im0)
                 cv2.waitKey(1)  # 1 millisecond
