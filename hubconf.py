@@ -23,7 +23,7 @@ def create(name, pretrained, channels, classes, autoshape):
     """Creates a specified model
 
     Arguments:
-        name (str): name of model, i.e. 'yolov7'
+        name (str): name of model, i.e. 'bk-net'
         pretrained (bool): load pretrained weights into the model
         channels (int): number of input channels
         classes (int): number of model classes
