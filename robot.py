@@ -1,4 +1,4 @@
-# Training the modified YOLO for Robot-vision 
+# Robot-end Streaming of the modified YOLO-v7 with Optimized Robot-vision Neural Network (SBHK-Net) 
 # Written and Tested By: Sheekar Banerjee
 # Supervised By: Dr. Humayun Kabir
 # Inha University, South Korea
