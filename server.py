@@ -1,4 +1,4 @@
-# Initializing server by tracing the modified YOLO-V7 model for occlusion aware Robot-vision 
+# Initializing server by tracing the modified YOLO for Robot-vision 
 # Written and Tested By: Sheekar Banerjee
 # Supervised By: Dr. Humayun Kabir
 # Inha University, South Korea
