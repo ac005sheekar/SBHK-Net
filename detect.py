@@ -44,8 +44,8 @@ def detect(save_img=False):
     # Second-stage classifier
     classify = False
     if classify:
-        modelc = load_classifier(name='efficientnet_v2_l', n=2)  # initialize
-        modelc.load_state_dict(torch.load('weights/efficientnet_v2_l.pt', map_location=device)['model']).to(device).eval()
+        modelc = load_classifier(name='bk_net', n=2)  # initialize
+        modelc.load_state_dict(torch.load('weights/bk_net.pt', map_location=device)['model']).to(device).eval()
 
     # Set Dataloader
     vid_path, vid_writer = None, None
