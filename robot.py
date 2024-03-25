@@ -1,4 +1,4 @@
-# Training the modified YOLO-V7 for occlusion aware Robot-vision 
+# Training the modified YOLO for Robot-vision 
 # Written and Tested By: Sheekar Banerjee
 # Supervised By: Dr. Humayun Kabir
 # Inha University, South Korea
