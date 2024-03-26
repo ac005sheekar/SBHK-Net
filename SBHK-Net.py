@@ -131,9 +131,9 @@ class InvertedResidualBlock(nn.Module):
             return self.conv(x)
 
 
-class EfficientNet(nn.Module):
+class SBHKnet(nn.Module):
     def __init__(self, version, num_classes):
-        super(EfficientNet, self).__init__()
+        super(SBHKnet, self).__init__()
         width_factor, depth_factor, dropout_rate = self.calculate_factors(version)
         last_channels = ceil(1280 * width_factor)
         self.pool = nn.AdaptiveAvgPool2d(1)
