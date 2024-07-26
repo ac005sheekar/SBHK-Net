@@ -10,4 +10,4 @@ The transformer-based detector SWINL Cascade-Mask R-CNN (9.2 FPS A100, 53.9% AP)
 outperformed by the SBHK-Net core object detector (56 FPS RTX3060, 56.4% AP) in terms of speed and accuracy, respectively. In terms of speed and accuracy, it surpasses a number of 
 other object detectors, including DINO-5scale-R50, ViT-Adapter-B, Scaled-YOLOv4, YOLOv5, DETR, Deformable DETR, and YOLOR and YoLOX. 
 
-techRxiv Preprint: https://github.com/ac005sheekar/SBHKNet.
+techRxiv Preprint: https://www.techrxiv.org/doi/full/10.36227/techrxiv.171710259.90201373
